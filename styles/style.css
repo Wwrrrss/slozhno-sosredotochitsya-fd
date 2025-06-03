@@ -2,27 +2,60 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  font-family: 'IBM Plex Mono' ;
+  font-family: 'IBM Plex Mono', sans-serif;
   background-image: url(../images/cover-image-dark.png);
   background-position: center;
   background-attachment: fixed;
+  font-size: var(--font-size);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .header {
   display: grid;
-  grid-template-rows: ;
+  grid-column: 1;
+  gap: 55px;
+}
+
+.frame {
+  margin: 10px;
+  height: 25px;
+  width: 25px;
+}
+
+.frame-top {
+  justify-self: end;
+  align-self: end;
+  border-top: var(--frame);
+  border-right: var(--frame);
+}
+
+.frame-bottom {
+  justify-self: start;
+  border-bottom: var(--frame);
+  border-left: var(--frame);
 }
 
 .header__theme-menu {
-  align-self: end;
   justify-self: end;
+  margin-block-end: 10px;
 }
 
 .header__theme-menu-button {
   background-color: transparent;
   color: var(--accent-color);
   border: none;
+  text-transform: lowercase;
 }
+/*
+.header__theme-menu-button:hover {
+  outline: rgba(255, 0, 112, 0.4) solid 1px;
+}
+
+.header__theme-menu-button:focus {
+  border-bottom: var(--accent-color) solid 1px;
+} */
 
 .header__theme-menu-button_active {
   outline: var(--accent-color) solid 1px;
@@ -33,16 +66,73 @@
   text-shadow: 4px 4px 0 var(--accent-color);
   color: rgb(219, 0, 255);
   font-weight: 700;
+  line-height: 83%;
 }
 
 .title-text {
   justify-self: end;
-  font-weight: 700;
-  font-size: 18px;
-  color: rgb(0, 0, 40);
   margin: 10px;
 }
 
 .title-decor {
   background-color: var(--accent-color);
+  font-size: var(--font-size);
+  font-weight: 700;
+  color: rgb(0, 0, 40);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  color: var(--text-color);
+}
+
+.text-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.text-section-title {
+  font-size: var(--font-size);
+  color: var(--accent-color);
+}
+
+.text-section-align {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text-link {
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+h4 {
+  font-weight: 400;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer {
+  text-align: center;
+  min-height: 667px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-title {
+  text-shadow: 2px 2px 0 var(--accent-color);
 }

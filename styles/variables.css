@@ -4,4 +4,7 @@
 */
 :root {
   --accent-color: rgb(255, 0, 112);
+  --font-size: 18px;
+  --text-color: rgb(241, 178, 206);
+  --frame: 1px solid var(--accent-color);
 }
