@@ -5,6 +5,9 @@
 */
 
 :root.theme-light {
+  --accent-color: rgb(255, 141, 203);
+  --text-color: rgb(53, 52, 48);
+  --frame: 1px solid rgb(53, 52, 48);
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
@@ -12,5 +15,14 @@
 }
 
 .theme-light .page {
+  background-image: url(../images/cover-image-light.png);
   /* Вам также нужно будет написать ряд подобных селекторов */
+}
+
+.theme-light .title {
+  color: rgb(255, 194, 230);
+}
+
+.theme-light .text-section-title {
+  color: var(--text-color);
 }
