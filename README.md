@@ -1,1 +1,1 @@
-Wwrrrss/slozhno-sosredotochitsya-fd
+https://github.com/Wwrrrss/slozhno-sosredotochitsya-fd
