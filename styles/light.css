@@ -26,3 +26,7 @@
 .theme-light .text-section-title {
   color: var(--text-color);
 }
+
+.theme-light .accent {
+  display: none;
+}
