@@ -234,12 +234,12 @@
   }
 
   .title {
-    margin: 32px 0 0 0;
+    margin-top: 32px;
   }
 
   .title-text {
     width: 364px;
-    margin: 10px 0 0 0;
+    margin-top: 10px;
   }
 
   .content {
@@ -336,11 +336,6 @@
     align-self: end;
     width: 491px;
     margin-top: 0;
-  }
-
-  .accent {
-    top: 20px;
-    right: 50px;
   }
 
   .accent::after {
